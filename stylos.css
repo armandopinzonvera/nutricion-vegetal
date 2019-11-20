@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color-uno: #265c00 ;
+    --color-dos:#68a225;
+    --color-tres:#b3de81;
+    --color-four:#fdffff;
+}
+#body{
+   background: url("IMAGENES/833.jpg");
+}
+#body2{
+    background: rgba(179, 222, 129, 0.7); 
+    position: relative;
+    display: flex;
+    justify-content:center;
+}
+#nav-bar{
+    background: var(--color-dos);
+    width:20%;
+    box-shadow: -px -3px 3px rgba(0, 0, 0, 0.5);
+}
+#nav-ul{
+    position: sticky;
+    top: 0;
+}
+
+#header-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+#header > h2{
+    text-align: center;
+    color: var(--color-tres);
+    margin-bottom: 50px;
+    font-size: 4vmin;
+}
+#nav-bar > ul >li{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid var(--color-tres);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#nav-bar > ul >li:hover{
+    background: var(--color-tres);
+    
+}
+.nav-link:hover{
+    color: midnightblue;
+}
+
+/*/////////////// PORTADA /////////////////7*/
+#nutricion_vegetal > header{
+    text-align: center;
+    height: 400px;
+    background: url(IMAGENES/tree.jpg);
+    background-size: cover;
+    padding-top: 20%;
+    color: white;
+}
+ #t1{
+     background: var(--color-uno);
+     opacity: 0.8;
+     padding: 20px;
+     display: block;
+     margin: 40px;
+     border-radius: 4px;
+     font-size: 4vmin;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+ } 
+
+
+
+
+/*///////////////   CONTAINER   ///////*/
+#container{
+    background: var(--color-four);
+    width: 70%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  
+}
+li{
+    list-style: none;    
+}
+.box{
+    padding: 10px;
+    border-bottom:2px solid var(--color-tres);
+}
+.box > ul > li{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align:center;
+    margin-top: 20PX;
+}
+.main-section{
+    text-align: justify;
+    padding: 10px;
+   
+}
+
+
+/*/////////  TABLA  ///////////*/
+table, th, td{
+    text-align: left;
+    
+    font-size: 2vmin;
+     border-collapse: collapse;
+     padding: 5px 2px 5px 2px;
+}
+#tabla{    
+    margin: auto;
+}
+thead{
+    background: var(--color-uno);
+    color: var(--color-four);   
+    border-bottom:1px solid var(--color-tres);
+}
+th{
+    text-align: center;
+}
+tr:nth-child(even){
+    background: var(--color-tres);
+}
+td{
+    border-right:1px solid var(--color-dos);
+}
+#table-box{
+       margin-top: 30px;
+}
+#table-box > label{
+    font-size: 14px;
+    display: block;
+    text-align: center;    
+}
+/*footer{
+    display: flex;
+    font-size: 12px;
+}*/
+
+@media(min-width:760px){
+
+    #container{
+        background: var(--color-four);
+        width: 60%;}
+}
